@@ -1,0 +1,119 @@
+
+  
+  body,
+  input {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .container2 {
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    min-height: 90vh;
+    margin-top: 100px;
+  }
+  
+  .forms-container2{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 0;
+
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 5rem;
+    transition: all 0.2s 0.7s;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  form.sign-up-form {
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 30px;
+  }
+  
+  .input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+  }
+  
+  .input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+  }
+  
+  .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #3e3c3c;
+  }
+  
+  .input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+  
+  .radioo {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 1px;
+    margin-left: 300px; /* Adjust this value to control the vertical spacing */
+  }
+  
+  .btn {
+    width: 150px;
+    background-color: #86e4dd;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .btn:hover {
+    background-color: #4d84e2;
+  }
+  
+  .ss {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
