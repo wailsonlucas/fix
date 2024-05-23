@@ -1,8 +1,6 @@
 import React from "react";
-//import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './stylesheet.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFigma } from '@fortawesome/free-brands-svg-icons';
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

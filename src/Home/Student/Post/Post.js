@@ -3,7 +3,7 @@ import { Avatar } from "@mui/material";
 import React from "react";
 import "./Post.css";
 import { useState } from 'react';
-import { Button } from '/Users/macbook/my-app/src/Button.styled.js';
+import { Button } from '../../../Button.styled.js';
 
 
 export const Post = ({ user, texte, timestamp }) => {

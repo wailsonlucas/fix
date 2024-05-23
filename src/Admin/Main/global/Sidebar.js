@@ -15,7 +15,7 @@ import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
-import "/Users/macbook/my-app/src/Admin/admin.css"
+import "../../../Admin/admin.css"
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();

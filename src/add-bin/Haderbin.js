@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './stylesheet.css'; 
 import Navbar from './Navbar';
-import '/Users/macbook/my-app/src/add-bin/cc.css';
-
+import '../add-bin/cc.css';
 export const Haderbin = () => {
   const [members, setMembers] = useState([]);
   const [ispending, setPending] = useState(true);

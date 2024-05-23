@@ -1,7 +1,7 @@
 // import axios from "axios";
 // import React, { useState, useEffect } from "react";
 // import { IoPersonCircleOutline } from "react-icons/io5";
-import "/Users/macbook/my-app/src/Home/Encadror/Profile.css"
+import "../Encadror/Profile.css";
 export const Profile = () => {
   //const [user, setUser] = useState({});
   //const [isUserUpdated, setisUserUpdated] = useState(false);

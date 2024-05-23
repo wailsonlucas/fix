@@ -7,7 +7,6 @@ import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettin
 import LockOpenOutlinedIcon from "@mui/icons-material/LockOpenOutlined";
 import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
 import Header from "../global/Header";
-import {mockDataTeam} from "/Users/macbook/my-app/src/Admin/data/tempodata.js";
 export const Teacher = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);

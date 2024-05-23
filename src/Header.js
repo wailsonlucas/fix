@@ -4,10 +4,6 @@ import { StyledHeader , Nav ,Image  } from './Header.styled'
 import { Container } from './Container.styled'
 import { Button } from './Button.styled'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFigma } from '@fortawesome/free-brands-svg-icons';
-import { Flex  } from './Flex.styled'
-import myy from './images/illustration-grow-together.svg';
-import { Padding } from '@mui/icons-material';
 
 const Header = () => {
     const iconStyle = {

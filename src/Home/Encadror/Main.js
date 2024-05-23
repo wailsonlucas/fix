@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Post } from "../Encadror/Post"
-import "/Users/macbook/my-app/src/Home/Student/main/SearchBar.css";
+import "../Student/main/SearchBar.css";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Box, Button, TextField } from "@mui/material";
 import { Formik } from "formik";

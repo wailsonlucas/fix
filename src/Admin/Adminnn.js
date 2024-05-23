@@ -4,7 +4,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme"
 import Sidebar  from "./Main/global/Sidebar"
 import Topbar from "./Main/global/Topbar";
-import "/Users/macbook/my-app/src/Admin/admin.css";
+import "../Admin/admin.css";
 
 
 const  Adminnn =() =>{

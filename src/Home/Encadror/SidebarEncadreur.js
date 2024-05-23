@@ -1,11 +1,8 @@
 import React from "react";
-import "/Users/macbook/my-app/src/Home/Student/navigation/Sidebar.css";
+import "../Student/navigation/Sidebar.css";
 import HomeIcon from "@mui/icons-material/Home";
 import ChatIcon from "@mui/icons-material/Chat";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
-import { Avatar } from "@mui/material";
-import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import LogoutIcon from '@mui/icons-material/Logout';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 ///import { useDispatch, useSelector } from "react-redux";

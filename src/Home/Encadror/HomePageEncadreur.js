@@ -1,5 +1,5 @@
 import React from "react";
-import "/Users/macbook/my-app/src/Home/Student/HomePage.css";
+import "../Student/HomePage.css";
 import  { SidebarEncadreur }  from "../Encadror/SidebarEncadreur";
 import { Outlet } from "react-router-dom";
 export const  HomePageEncadreur =()=> {

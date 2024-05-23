@@ -1,6 +1,5 @@
-import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 
-import "/Users/macbook/my-app/src/Home/Student/Post/Posta.css"
+import "../../Student/Post/Posta.css";
 export const Posta = ({ texte, timestamp, user }) => {
     return (
         <div className="posta-container">

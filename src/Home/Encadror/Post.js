@@ -2,7 +2,6 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Avatar } from "@mui/material";
 import React from "react";
 import "../Student/Post/Post.css";
-import { Button } from '/Users/macbook/my-app/src/Button.styled.js';
 
 export const Post = ({ user, texte, timestamp }) => {
   return (
