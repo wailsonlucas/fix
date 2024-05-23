@@ -8,8 +8,10 @@ import { useNavigate } from 'react-router-dom';
 import './style.css'
 import { Margin } from '@mui/icons-material';
 
+
 function SignInForm() {
  // const { login } = useAuth();
+  const navigate = useNavigate()
 
   return (
     <Formik
@@ -22,7 +24,8 @@ function SignInForm() {
        // password: Yup.string().required('password is required'),
       })}
       onSubmit={async (values, { setSubmitting, setErrors }) => {
-        const url = values.Niveau === 'Student' ? 'https://oussamaboussaid.000webhostapp.com/api/login_etudiant' : 'LOGIN_ENDPOINT_FOR_PROFESSOR';
+        // const url = values.Niveau === 'Student' ? 'https://oussamaboussaid.000webhostapp.com/api/login_etudiant' : 'LOGIN_ENDPOINT_FOR_PROFESSOR';
+           const url = 'http://127.0.0.1:8000/api/login_etudiant';
 
         try {
 
@@ -30,7 +33,6 @@ function SignInForm() {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
-              
 
             },
             body: JSON.stringify({
@@ -51,6 +53,7 @@ function SignInForm() {
             localStorage.setItem('token', data.token); 
           //  login();
            // Redirect to student page
+             navigate("/" + data.redirect_to)
           }
 
         } catch (err) {
@@ -65,7 +68,7 @@ function SignInForm() {
   <div style={{  marginTop: '-3px' }}>
   <div className="input-field "style={{  marginBottom: '20px' }}>
     <i className="fas fa-user"></i>
-    <Field type="Number" name="id" placeholder="Username" />
+    <Field type="text" name="id" placeholder="Username" />
   </div>
   <div className="input-field "style={{  marginBottom: '20px' }}>
     <i className="fas fa-lock"></i>

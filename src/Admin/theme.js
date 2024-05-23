@@ -1,6 +1,7 @@
+
 import { createContext, useState, useMemo } from "react";
 import { createTheme } from "@mui/material/styles";
-import "/Users/macbook/my-app/src/Admin/admin.css"
+import "./admin.css"
 
 // color design tokens export
 export const tokens = (mode) => ({

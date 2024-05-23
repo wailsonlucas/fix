@@ -32,7 +32,7 @@ function App() {
 
   // Add the correct import statement for the CSS file
   const AppRoutes = () => {
-    const routes = useRoutes([
+    return useRoutes([
     {
       path: "/",
       element: <Firstpage></Firstpage>,
@@ -49,9 +49,9 @@ function App() {
     {
         path: "/Home",
         
-          element: ( <ProtectedRoute allowedRoles={['Student']}>
+          element: ( 
                 <HomePage />
-        </ProtectedRoute> ),
+             ),
           children: [
 
             { path: "",
@@ -74,9 +74,7 @@ function App() {
           path: "/teacher",
           
             element:(
-              <ProtectedRoute allowedRoles={['Teacher']}>
                 <HomePageEncadreur />
-              </ProtectedRoute>
             ),
             children: [
               { path: "",
@@ -129,24 +127,17 @@ function App() {
             ],
           },
         ],
-      
-          
-     
-        
-         
-      
-
   );
-   return routes;
+   // return routes;
 };
 
 
   return (
     <>
   <AuthProvider>
-    <Router>
+    {/*<Router>*/}
       <AppRoutes />
-    </Router>
+    {/*</Router>*/}
   </AuthProvider>
     </>
   );

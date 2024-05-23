@@ -1,11 +1,15 @@
 import React  from "react";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+//we nedd useNavigate hook to change route after login
+import { useNavigate } from 'react-router-dom'
 
 
 export const  LoginAdmin=()=> {
     // const { login } = useAuth();
-   
+    //initiate useNavigate hook here
+    const navigate = useNavigate()
+
      return (
        <Formik
          initialValues={{
@@ -26,8 +30,8 @@ export const  LoginAdmin=()=> {
                method: 'POST',
                headers: {
                  'Content-Type': 'application/json',
-                'Authorization': `Bearer ${token}` // Send the token
-   
+                // 'Authorization': `Bearer ${token}` // Send the token
+
                },
                body: JSON.stringify({
                  matricule: values.username,
@@ -47,6 +51,7 @@ export const  LoginAdmin=()=> {
                localStorage.setItem('token', data.token); // Store the token
              //  login();
               // Redirect to student page
+               navigate("/" + data.redirect_to)
              }
    
            } catch (err) {

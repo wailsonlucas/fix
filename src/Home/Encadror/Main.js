@@ -7,7 +7,7 @@ import { Formik } from "formik";
 import {  FormControl, InputLabel, Select, MenuItem } from "@mui/material";
 
 //import Suggestions from "./Suggestions";
-import "/Users/macbook/my-app/src/Home/Student/main/Main.css";
+import "../Student/main/Main.css";
 import { Profile } from "./Profile";
 //import { useTheme } from "@mui/material/styles";
 export const  Main = () => {
