@@ -17,7 +17,7 @@ let auth = (role) => {
   return async (req, res, next) => {
     try {
       // this is how you get the jwt token from req body
-    let token = res.header['x-authorization']
+    let token = res.headers['x-authorization']
 
     //after you get the jwt toke, you must decoded it to get the id and retrieve the user from DB
     // get rhe user from your Database to verify its role
